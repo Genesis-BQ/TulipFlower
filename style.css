@@ -40,9 +40,11 @@ nav a:hover{
 }
 
 .tipos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 20px;
+    margin: auto;
 }
 
 .tipos li{
@@ -51,6 +53,7 @@ nav a:hover{
     width: 30%;
     vertical-align: top;
     margin: 0 1.5%;
+    margin-bottom: 20px; 
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -268,6 +271,8 @@ p::first-line{
     padding: 4em 0;
 }
 
+/* cedula */
+
 @media screen and (max-width:480px){
     h1{
         text-align: center;
@@ -280,5 +285,78 @@ p::first-line{
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
+    }
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-dato, .contenido-datos, .video {
+        /* Puedes ajustar el ancho según tus necesidades para tablet */
+        width: 80%;
+        margin: 0 auto; /* Centrar el contenido */
+    }
+    .lista-datos, .imagen-dato, .imagen-datos {
+        width: 100%;
+    }
+}
+
+/* Este es el del formulario */
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .formulario{
+        width: auto;
+    }
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .formulario {
+        width: 80%; /* Puedes ajustar el ancho según tus necesidades para tablet */
+        margin: 0 auto; /* Centrar el formulario */
+    }
+}
+
+/* Este es el del productos */
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+
+    .tipo-descripcion {
+        font-size: 0.7em; 
+    }
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+
+    .tipo-descripcion {
+        font-size: 1em; /* Ajusta el tamaño de la descripción para tablet */
     }
 }
